@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Chronojump-Boscosystem</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/inner.css" />
+    <link rel="stylesheet" href="styles/color.css" />
+    <link rel="stylesheet" href="styles/prettyPhoto.css"  media="screen" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    
+</head>
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+            <div id="outertheheader">
+                
+                <header id="top">
+                    <div class="container">
+                        <div class="twelve columns">
+                            <div id="logo"  class="three columns alpha"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                            <section id="navigation">
+                                <nav id="nav-wrap">
+                                    <ul id="topnav" class="sf-menu">
+					    <li style="float:right; padding:0px 0px;"><a href="index_es.html">Español</a></li>
+					    <li style="float:right; padding:0px 26px; color:#ffcc01;">ENGLISH</li> <!--not in the tinynav dropdown mobile-->
+					    <br><br><br>
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="tests.html">Tests</a></li>
+					    <li class="current"><a href="software.html">Software</a></li>
+					    <li><a href="pricing.html">Pricing</a></li>
+					    <li><a href="courses.html">Courses</a></li>
+					    <li><a href="contact.html">Contact</a></li>
+                                    </ul><!-- topnav -->
+                                </nav><!-- nav -->	
+                                <div class="clear"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </header>
+                
+                <div id="pagetitlecontainer">
+                    <div class="container">
+                    	<div class="twelve columns">
+                        	<h1 class="pagetitle">Chronojump software</h1>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>
+        <!-- END HEADER -->
+        
+ 
+        
+        <!-- MAIN CONTENT -->
+	<div id="outermain">
+		<div class="container">
+
+		  <section id="maincontent" class="twelve columns">
+		    <section class="positionleft seven columns alpha">
+
+			    <ul id="filter" class="controlnav">
+				    <li>Select version:<br>&nbsp;</li>
+				    <li><a href="#1_5_2" data-value="all">1.5.2</a><br>(2015 Jul 25)</li>
+				    <li><a href="#1_5_1" data-value="all">1.5.1</a><br>(2015 May 29)</li>
+				    <li><a href="#1_5_0" data-value="all">1.5.0</a><br>(2015 March 17)</li>
+			    </ul>
+			    
+			    <div id="1_5_2">
+				    <h2>Chronojump software: 1.5.2  (2015 Jul 25)</h2>
+			    
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-3x"></i>&nbsp;&nbsp;Main changes</span></h3>
+				    <ul>
+					    <li>All tests in the software (jump, runs, other tests) have an interface similar to encoder. Selection of tests and options is on the top and there are only two tabs: Capture and Analysis. Results tab (from previous versions) it's found now inside of Capture (select it at center-right of the screen "Show table").</li>
+					    <li>Added language change option in preferences (for users who had problems with the language of Chronojump).</li>
+					    <li>Safer autodetection of Chronopic.</li>
+				    </ul>
+				    
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Minor changes</span></h3>
+				    
+				    General:
+				    <ul>
+					    <li>If no session, two big buttons are shown on the left (new session / open session).</li>
+					    <li>Person win is much easier to use now.</li>
+					    <li>Improved interface for tablets with bigger buttons and a person select window (This tables have to run on Windows, Linux or MacOSX).</li>
+					    <li>Safer load session, export, report (with less database calls). Some users had problems with too much Open/close database actions.</li>
+					    <li>Safer open of a CSV (spreadsheet) if it's already opened by other software.</li>
+				    </ul>
+
+				    Jumps:
+				    <ul>
+					    <li>Fixed not display of calculation of potency and stiffness on interval jumps after the jump.</li>
+				    </ul>
+
+
+				    Encoder:
+				    <ul>
+					    <li>Improved power calculation on inertial modes (now eccentric values are higher than in previous versions).</li>
+					    <li>Added forces on encoder analyze table.</li>
+					    <li>Created configuration file for automatic configuration encoder and inertia machine (inertia machine vendors can send his file to their clients).</li>
+					    <li>GUI improved on encoder main buttons: calcule, recalculate, ...</li>
+					    <li>Moved encoder "export current set" to menu.</li>
+					    <li>Some encoder methods are more robust.</li>
+					    <li>Fixed smoothings on eccentric-concentric repetititions. Some of them had a smoothing too low.</li>
+					    <li>Encoder configuration window separates gravity than inertia machines. Also separates rotary friction encoders with a selector: (On axis / outside axis).</li>
+				    </ul>
+
+
+				    System specific:
+				    <ul>
+					    <li>MacOSX: Fixed not shown of splash win on database problem at start on MacOSX.</li>
+					    <li>Linux: Fixed sound on Linux (using Gstreamer).</li>
+				    </ul>
+				    
+				    <h3><span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span></h3>
+				    <ul>
+					    <li>Updated translations: Catalan (99%), Czech (99%), French (79%), Hungarian (56%), Italian(98%), Spanish (100%).</li>
+					    <li><a href="https://l10n.gnome.org/module/chronojump/">See translation statistics</a>.</li>
+				    </ul>
+
+
+			    </div> <!-- 1_5_2 -->
+				    
+
+			    <div class="separator shadow"></div>
+
+			    <div id="1_5_1">
+				    <h2>Chronojump software: 1.5.1  (2015 May 29)</h2>
+
+				    <h3><span class="highlight2"><i class="fa fa-circle-o fa-2x"></i>&nbsp;&nbsp;Global changes</span></h3>
+				    <ul>
+					    <li>Encoder is autodetected in all systems</li>
+					    <li>Normal Chronopic (jumps / runs) is autodetected on MacOSX and Linux (Windows will be solved on next version)</li>
+					    <li>Fixed crash at load session when checkboxes are clicked</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-bar-chart fa-2x"></i>&nbsp;&nbsp;Encoder</span></h3>
+				    Faster:
+				    <ul>
+					    <li>Encoder processes are much faster now (processes leave opened)</li>
+					    <li>After capture, treeview and bars are not erased. Don't need to wait to be created the final set graph. This is much faster.</li>
+				    </ul>
+
+				    Graphical interface:
+				    <ul>
+					    <li>New layout of encoder capture (video and serie on the right)</li>
+					    <li>Inertia extra weights selectable from main gui</li>
+					    <li>Adaptative displayed height on capture</li>
+					    <li>Encoder configuration window is better now</li>
+					    <li>Improved encoder inertial images</li>
+				    </ul>
+
+				    New features:
+				    <ul>
+					    <li>Encoder capture tab show force on realtime plot and works with bells</li>
+					    <li>Encoder configuration gets stored on database for having the same configuration next time Chronojump is opened</li>
+					    <li>Added two inertial modes: lateral and mov pulley</li>
+					    <li>Encoder video filename is shown and folder can be opened</li>
+					    <li>Some graphs use inertia instead of mass if some repetitions are inertial</li>
+					    <li>On load set, current set row is selected</li>
+					    <li>On side compare speed, power, ... 0 horizontal line is shown</li>
+					    <li>On paint eccentric show also min speed, min power</li>
+					    <li>Barplot eccentric shows diagonal -45 lines for eccentric</li>
+				    </ul>
+
+				    Better calculations:
+				    <ul>
+					    <li>Calculations (like mean power) are the same now on realtime capture and on other calculations because calculation methods have been unified</li>
+					    <li>Safer calcule repetitons on capture (shorter are discarded, this fixes some problems in small micromovements or cable distensions while doing the movement)</li>
+					    <li>Better way to auto-calculate the smoothings on eccentric using power instead of speed</li>
+					    <li>Eccentric speed is shown in absolute value</li>
+				    </ul>
+
+				    Bugs fixed:
+				    <ul>
+					    <li>Fixed 1.5.0 bug: cancel or delete signal makes bars disappear until cj is closed</li>
+					    <li>Fixes on encoder recalculate and previously saved repetitions (no more meanPower 0)</li>
+					    <li>Fixed problem (Chronojump crashed) with weight (with decimals) on analyze</li>
+					    <li>Fixed bad smoothing was assigned to some repetitions</li>
+					    <li>Fixed force and power in inclinated planes</li>
+					    <li>Fixed mass on LINEARONPLANEWEIGHTDIFFANGLE.</li>
+					    <li>Now Jump height calculation is only in linear and inverted modes</li>
+					    <li>Fixed delete session now deletes all encoder and videos stuff</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-laptop fa-2x"></i>&nbsp;&nbsp;System specific</span></h3>
+
+				    MacOSX specific:
+				    <ul>
+					    <li>Error log (and ping) can be sent from MacOSX</li>
+					    <li>Fixed splashWin (initial small window) permanent on mac sometimes</li>
+				    </ul>
+
+				    Raspberry Pi specific:
+				    <ul>
+					    <li>Run maximized by default</li>
+					    <li>On raspberry not camera (personal photos) cannot be done</li>
+					    <li>Extra mass controls for raspberry</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span></h3>
+
+				    <ul>
+					    <li>Added Italian translation</li>
+					    <li>Updated Czech, Romanian translations</li>
+				    </ul>
+			    </div> <!-- 1_5_1 -->
+
+
+			    <div class="separator shadow"></div>
+
+			    <div id="1_5_0">
+				    <h2>Chronojump software: 1.5.0  (2015 March 17)</h2>
+
+				    <span class="highlight2">Update 8 April:</span> We published an update for MacOSX fixing a screen that gets hanged on start. Now the official 1.5.0 download for Mac has this update and other improvements that will be on version  .1.
+				    <br><br>
+
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-3x"></i>&nbsp;&nbsp;Main changes</span></h3>
+
+				    Global:
+				    <ul>
+					    <li>Photos and video work now on MacOSX.</li>
+					    <li>First startup of the software (creation of database) now is much faster (6 times aprox.)</li>
+					    <li>In order to detect and fix bugs fast, a log is always saved and can be sended easily to us (just press a button if software crashed).
+					    <br>On MacOSX it has been deactivated temporarily, but users can send it opening 'preferences' window, then clicking on 'open logs folder' and sending the files by email.</li>
+					    <li>Improved start on MacOSX. On some systems crashes sometimes.</li>
+					    <li>When one or more peresons are loaded, now the 'modify person' window does not appear. Then loading is faster.</li>
+				    </ul>
+
+				    Encoder:
+				    <ul>
+					    <li>New capture method. Faster and works in all systems (old method didn't work on XP and has some problems on MacOSX).</li>
+					    <li>On capture now realtime data on inertial machines is dispayed. Repetitions are shown as concentric or concentric-eccentric.
+					    <br>But, after capture, repetitions will be shown as concentric or ecc-con. This happens because all the software parts are not prepared yet to manage the con-ecc repetitions.</li>
+					    <li>Results on realtime capture are now very similar to the results obtained at the end of capture.</li>
+					    <li>Inertial machines with too much friction can use now the inertial momentum calculation method because now it needs only half of the oscillations than before.</li>
+					    <li>During the capture. now the force can be shown but only numerical. Graphical realtime force capture will be done in next version.</li>
+					    <li>Video record and play is done in a bigger and centered area of main window.</li>
+					    <li>At the 'analyze' tab, 'cross variables' button, now there's a different icon for eccentric-concentric phases, and also laterality. Laterality is shown also in other graphs.</li>
+					    <li>If there's a problem on capture, software will not crash now. User has to be able to cancel the analyze process.</li>
+					    <li>Fixed bug exporting on encoder. It didn't worked on some systems.</li>
+				    </ul>
+
+				    Jumps and runs:
+				    <ul>
+					    <li>Added stiffness calculation on jumps.</li>
+					    <li>Fixed a problem on performing interval runs when only on track has been detected.</li>
+					    <li>Fixed bug with the 'time' label at the end of some jumps and runs.</li>
+				    </ul>
+
+
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Minor changes</span></h3>
+
+				    Encoder:
+				    <ul>
+					    <li>Better colors for differentiate ecc-con phases.</li>
+					    <li>Is USB cable is disconnected while capture with encoder, software detects it and alerts the user. This works fine on Linux and MacOSX, but the fix is still pending on Windows.</li>
+					    <li>On the ecc-con capture, first repetition is discarded if it's concentric.</li>
+					    <li>While capturing now is not possible to press buttons like weight, laterality, ... changing this button on capture produces problems in previous version.</li>
+					    <li>Fixed some bugs on loosing information on serie recalculation (video got lost). All the lost data has been recuperated.</li>
+					    <li>Fixed a problem on saving 1RM when it couldn't be calculated.</li>
+					    <li>Fixed problem on 1RM calculation of different exercises at the same time. Now it's not allowed to calculate 1RM of different exercies together.</li>
+					    <li>Fixed small problem on the person displacement on the axis rotary encoder at inertial machines.</li>
+					    <li>More precision on inertia momentum calculation because now two decimals are allowed in machine diameters.</li>
+				    </ul>
+
+				    Jumps and runs:
+				    <ul>
+					    <li>On multijumps capture 'height' is shown and can be used as feedback (bells).</li>
+					    <li>If USB is disconnected at the middle of test, test can be aborted (on previous versions software started an infinite bucle).</li>
+					    <li>Deleted "maximum" jump, now "Free" jumps is used.</li>
+					    <li>Fixed power calculation on Drop Jump (extra weight was not used in the formula).</li>
+					    <li>Now multijumps show also power.</li>
+					    <li>Fixed Chronopic connection problem on multijumps or interval runs tabs.</li>
+					    <li>Improvements on jumps and runs cancel. Now software performs better after a cancelled test.</li>
+					    <li>Exporting reactive jumps show more data now.</li>
+				    </ul>
+
+				    Others:
+				    <ul>
+					    <li>Fixed a random problem on Chronopic detection that makes Chronopic window close suddenly.</li>
+				    </ul>
+
+
+				    <h3><span class="highlight2"><i class="fa fa-book fa-2x"></i>&nbsp;&nbsp;Software manuals have been updated</span></h3>
+
+				    <h3><span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Chronojump translation status</span></h3>
+
+				    <ul>
+					    <li>English(*): 100%</li>
+					    <li>Spanish: 100%</li>
+					    <li>Czech: 100%</li>
+					    <li>Bosnian: 99%</li>
+					    <li>Catalan: 98%</li>
+					    <li>Greek 95%</li>
+					    <li>Slovene: 93%</li>
+				    </ul>
+
+				    (*) Original language of the software.
+				    <br>List includes translations &gt;= 90%.
+				    <br>More info at: <a href="https://l10n.gnome.org/module/chronojump/">https://l10n.gnome.org/module/chronojump</a>.
+				    <br><br>
+
+				    <h3><span class="highlight2"><i class="fa fa-smile-o fa-2x"></i>&nbsp;&nbsp;Acknowledgements</span></h3>
+				    <ul>
+					    <li>Thanks to Andoni Morales for his help on packaging the software. Thanks to Carles Pina for the server integration.</li>
+					    <li>Thanks to Jordi Carreras, Francesc Hernández and Ferran Suárez for all the software tests they have done.</li>
+				    </ul>
+			    </div> <!-- 1_5_0 -->
+		
+		</section>
+		<section class="one column">&nbsp;</section>
+		<section class="positionright four columns alpha">	
+			
+			<h3><span class="highlight1"><i class="fa fa-comments fa-2x"></i>&nbsp;&nbsp;Post comments</span></h3>
+			If software hangs or crashes, re-open it and click on "Send error log". Also add your email and describe the problem you found.
+			<br>Version 1.5.0 cannot "Send error log" on Mac.
+			<br><br>Write comments here for other uses like questions, new features, ...
+			<br><p>
+			<script data-isso="/isso" src="/isso/js/embed.min.js"></script>
+			<div id="isso-thread"></div>
+		</section>
+	      </section>
+                
+            </div>
+        </div>
+
+        <!-- END MAIN CONTENT -->
+        
+        <div id="footerstrip"><div></div></div>
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div class="container">
+                <div id="footersidebarcontainer" class="twelve columns"> 
+                    <footer id="footersidebar">
+                    <div id="footcol1"  class="four columns alpha">
+                    <ul>
+                        <li class="widget-container"><p><img src="images/logo.png" alt=""></p></li>
+			<li><a href="about.html">about us</a></li>
+                    </ul>
+                    </div>
+                    <div id="footcol2"  class="six columns">
+                        <ul>
+                            <li class="widget-container">
+                                <h2 class="widget-title">Relevant documentation</h2>
+                                <ul>
+                                    <li><a href="http://www.cafyd.com/REVISTA/ojs/index.php/ricyde/article/download/528/288">Creation and validation of tools (english article)</a></li>
+                                    <li><a href="http://www.tdx.cat/handle/10803/83302">Creation and validation of tools (spanish PhD)</a></li>
+                                    <li><a href="http://chronojump.org/docs/chronojump_manual_en.pdf">Software manual</a></li>
+                                    <li><a href="documents.html">(See all documents)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footcol3"  class="two columns omega">
+                        <ul>
+                          <li class="widget-container">
+                                <h2 class="widget-title">Social</h2>
+                                <ul>
+                                    <li><a href="http://forum.chronojump.org">Forum</a></li>
+                                    <li><a href="https://twitter.com/boscosystem">Twitter</a></li>
+                                    <li><a href="http://www.flickr.com/photos/98402533@N08/sets/">Photos</a></li>
+                                    <li><a href="https://www.youtube.com/user/Chronojump">Videos</a></li>
+                                    <li><a href="server.html">Server (share data)</a></li>
+                                </ul>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    </footer>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div class="container">
+        	<div id="footercontainer" class="twelve columns">
+            	<footer id="footer">CHRONOJUMP-BOSCOSYSTEM - free software - open hardware - reliable - affordable</footer>
+                <div id="toTop">^ Back to Top</div>
+            </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+	</div><!-- end outercontainer -->
+</div><!-- end bodychild -->
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+
+<!-- jQuery Easing -->
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+
+<!-- jQuery PrettyPhoto -->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+<!-- jQuery Fade -->
+<script type="text/javascript" src="js/fade.js"></script>
+
+
+<!-- jQuery Dropdown Mobile -->
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

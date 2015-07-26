@@ -1,0 +1,284 @@
+/* 
+
+AppSquare - CSS File
+
+CHANGE COLOR STYLE
+
+*/
+
+body {color:#555;}
+#outerheader{
+	border-top:solid 1px #1b366f;
+	border-bottom:solid 1px #fff;
+	background: #142f6a; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#142f6a', endColorstr='#0c1634'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#142f6a), to(#0c1634)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #142f6a,  #0c1634); /* for firefox 3.6+ */
+}
+#top{border-bottom:solid 1px #041033; background:url(../images/bgtop.png) repeat}
+/*
+#outertheheader{background:url(../images/map.png) no-repeat top center; border-bottom:solid 1px #141d3a }
+#outertheheader{border-bottom:solid 1px #141d3a }
+*/
+#outertheheader{background:url(../images/map-small.png) no-repeat top center; border-bottom:solid 1px #141d3a }
+
+
+/*============================================== GENERAL SECTION ==============================================*/
+/* Link color */
+a, a:visited, .colortext, .colortext a, .colortext a:visited{color:#68b61d}
+a:hover, a.colortext:hover, .colortext a:hover{color:#7aca2e;}
+
+
+/* Heading & text */
+h1, h2, h3, h4, h5, h6{color:#444;}
+
+/*============================================== HEADER AND MENU SECTION ==============================================*/
+.sf-menu a, .sf-menu a:visited{color:#fff;}/* 1st level */
+.sf-menu a:hover, .sf-menu li.current > a{color:#ffcc01;}/* 1st level */
+
+/* dropdown */
+.sf-menu li li, .sf-menu li li:hover, .sf-menu li li.sfHover{background:#0c1736; opacity:1; text-transform:capitalize}
+.sf-menu li li a, .sf-menu li li a:visited, .sf-menu li li a:hover, sf-menu li.current li a{color:#eeeeee;}
+.sf-menu li li:hover{
+	background:#12285a;
+	opacity:1;
+}
+.sf-menu li li {border-bottom:solid 1px #040d25;}
+.sf-menu li li:last-child{ border-bottom:0}
+
+.tinynav{background:#fbfbfb;}
+
+/*============================================== SLIDER SECTION ==============================================*/
+#outerslider{border-bottom:solid 1px #fff;}
+.flex-caption{color:#fff}
+.flex-caption h1, .flex-caption .slidetext1{color:#769bec; text-shadow: 1px 1px 1px #000;}
+.flex-caption span{color:#bbb;}
+
+
+
+/*============================================== AFTER HEADER SECTION ==============================================*/
+#outerafterheader{border-bottom:solid 1px #fff;}
+.pagetitle-container{}
+.pagetitle, .pagedesc{color:#fff;}
+
+/*============================================== CONTENT SECTION ==============================================*/
+
+.package-list h2{background:#282828 url(../images/bg_1.png) no-repeat 90% 16px; color:#fff; overflow:visible}
+.package-box{color:#303030}
+.package-box a, .package-box a:visited{color:#303030}
+
+.highlight-container{border:solid 1px #e8e8e8; border-width:1px 0;}
+.highlight-content h2{color:#303030;}
+
+/* Form */
+input[type="text"],
+textarea, input[type="password"], select{
+	background: #f9f9f9;
+	border: 1px solid #f1f1f1;
+	border-width:0px 1px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.1);
+	border-bottom:0;
+	color:#666;
+}
+
+/* Line */
+hr {color:#efefef;background-color:#efefef;}
+.separator.line{border-bottom:solid 1px #efefef;}
+
+/* Images */
+.imgborder{border:solid 1px #f0f0f0;}
+
+/* List */
+.customList{border-top:dotted 1px #cbcbcb;}
+.customList li{border-bottom:dotted 1px #cbcbcb; background:url(../images/arrow.gif) no-repeat 20px 13px}
+.customList li:hover{background:#f6f6f6 url(../images/arrow.gif) no-repeat 20px 13px;}
+
+
+/* Button */
+.button, .button:visited, input[type="submit"]{
+	background: #539314; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65b61b', endColorstr='#539314'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#65b61b), to(#539314)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #65b61b,  #539314); /* for firefox 3.6+ */
+	color:#fff;
+	border-bottom:solid 1px #5e9a24;
+	-moz-box-shadow:0 3px 0px rgba(69, 126, 13, 1);
+	-webkit-box-shadow: 0 3px 0px rgba(69, 126, 13, 1);
+	box-shadow: 0 3px 0px rgba(69, 126, 13, 1);
+}
+.button:hover, input[type="submit"]:hover{
+	background: #65b61b; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#539314', endColorstr='#65b61b'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#539314), to(#65b61b)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #539314,  #65b61b); /* for firefox 3.6+ */
+	color:#fff;
+	border-bottom:solid 1px #5e9a24;
+}
+
+.button.orange, .button.orange:visited, input[type="submit"].orange{
+	background: #ff5b23; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4101', endColorstr='#ff5b23'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff4101), to(#ff5b23)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ff4101,  #ff5b23); /* for firefox 3.6+ */
+	color:#fff;
+	border-bottom:solid 1px #f55a21;
+	-moz-box-shadow:0 1px 0px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0 1px 0px rgba(0, 0, 0, 1);
+}
+.button.orange:hover, input[type="submit"].orange:hover{
+	background: #ff4101; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5b23', endColorstr='#ff4101'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff5b23), to(#ff4101)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ff5b23,  #ff4101); /* for firefox 3.6+ */
+	color:#fff;
+	border-bottom:solid 1px #f55a21;
+}
+
+
+/* Dropcaps and Circle */	
+.dropcap1{text-shadow:1px 1px 0 #ededed; color:#68b61d}
+.dropcap2, .circle{background:#68b61d; color:#fff;}		
+.dropcap3{	background:#68b61d; color:#fff;}
+
+/* Highlight */
+.highlight1{background:#68b61d; color:#fff;}	
+.highlight2{background:#ebebeb;  border:solid 1px #f7f7f7}
+
+/* Code */
+code {border-left:4px solid #eaeaea;}
+
+		
+/* Tabs */
+ul.tabs li {
+	background:#f6f6f6 url(../images/arrow-left.png) no-repeat 12px 9px;
+	border:1px solid #ebebeb;
+	border-width:1px 1px 1px 0px;
+}
+ul.tabs li:first-child{border-left:solid 1px #ededed;}
+ul.tabs li a {color:#303030;}
+ul.tabs li.active{background:#fff url(../images/arrow-down.png) no-repeat 12px 9px; }
+#tab-body{border:solid 1px #ebebeb;}
+
+/* jQuery Toggles */
+#toggle{border:solid 1px #ececec; border-bottom:0}
+#toggle h2{border-bottom:solid 1px #ececec;}
+.toggle_container{border-bottom:solid 1px #ececec;}
+h2.trigger span {color:#303030}
+h2.active{background:#f6f6f6;}
+
+/* Accordion */
+h2.accordion-title{background:#f4f4f4;}
+h2.accordion-title.active{background-color:#fafafa; border-bottom:solid 1px #fff}
+ul.ts-accordion li{border-bottom: 1px solid #fff;}
+div.accordion-content{background:#fafafa }
+
+/* Tables */
+th{border-bottom: 1px solid #f1f1f1;}
+/*
+table {border: 1px solid #f1f1f1;border-bottom:0;}
+tr td {border-bottom: 1px solid #f1f1f1;}
+*/
+
+tr.odd td {background: #F2F7FC;}
+
+/* Pricing Box */
+ul.list-box > li{
+	background-color:#e9e9e9;
+	border:solid 1px #fff;
+	border-width:0 1px 0 0;
+ }
+ul.list-box .title-box{
+	color:#fff;
+	background-color:#282828;
+}
+ul.list-box .price-text{
+	color:#303030;
+	border-bottom:solid 1px #e0e0e0;
+}
+ul.list-box li.current{
+	-moz-box-shadow: 0px 0px 18px #000;
+	-webkit-box-shadow: 0px 0px 18px #000;
+	box-shadow: 0px 0px 18px #000;
+}
+.list-box-content ul li{
+	background:#f1f1f1 url(../images/checklist.png) no-repeat 20px 12px;
+	border-bottom:1px solid #fff;
+}
+
+
+/*============================================== BLOG SECTION ==============================================*/
+.post{}
+.postimg{border:solid 1px #f0f0f0;}
+.posttitle a, .posttitle a:visited{color:#444;}
+.posttitle a:hover{color:#7aca2e;}
+.entry-utility{color:#aaa; border:solid 1px #f6f6f6; border-width:1px 0}
+.entry-utility a, .entry-utility a:visited{color:#555;}
+.entry-utility a:hover{color:#7aca2e;}
+.tdate, .reply a, .reply a:visited{color:#969696; }
+.commentlist li{border-bottom:dotted 1px #cbcbcb}
+.commentlist li li{border:0;}
+
+.wp-pagenavi a, .wp-pagenavi a:visited, .wp-pagenavi .pages{
+	color:#555;
+	border:solid 1px #e3e3e3;
+	background: #f4f4f4; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f4f4f4)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ffffff,  #f4f4f4); /* for firefox 3.6+ */
+}
+.wp-pagenavi .current, .wp-pagenavi a:hover, .wp-pagenavi .pages:hover{
+	color:#555; 
+	border:solid 1px #e3e3e3; 
+	background: #fff; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ffffff'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ffffff)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #f4f4f4,  #ffffff); /* for firefox 3.6+ */
+}
+
+/*============================================== PORTFOLIO SECTION ==============================================*/
+#filter li a, #filter li a:visited{border:solid 1px #fff; color:#303030}
+#filter li a:hover, #filter li.selected-1 a{text-decoration:none; background:#f8f8f8; border:solid 1px #f0f0f0}
+.ts-display-pf-img{border:solid 1px #ececec;}
+
+
+/*============================================== SIDEBAR SECTION ==============================================*/
+#sidebar .widget-title{color:#303030; border-bottom:dotted 1px #cbcbcb;}
+#sidebar li li{border-bottom:dotted 1px #cbcbcb;}
+#sidebar li li a{color:#555;}
+#sidebar li li:hover{background-color:#f6f6f6}
+
+#sidebar .smalldate a, #sidebar .smalldate a:visited{color:#dc3c00;}
+#sidebar .smalldate a:hover{text-decoration:underline;}
+#sidebar .rp-widget li h3 a{color:#000;}
+#sidebar .rp-widget li h3 a:hover{color:#7aca2e;}
+#sidebar .rp-widget img{border:solid 1px #e7e7e7;}
+#sidebar .rp-widget .smalldate{color:#888;}
+
+
+
+
+
+/*============================================== FOOTER SIDEBAR SECTION ==============================================*/
+#footerstrip{
+	background:url(../images/shadow-footer.png) repeat-x top left;
+}
+#footerstrip div{background:#f9f9f9;}
+#outerfootersidebar{background:#303030 url(../images/bg_footer_widget.gif) repeat; border-top:1px solid #fff; color:#888;}
+#footersidebar{}
+#footersidebar .widget-title{color:#fff; text-shadow: 1px 1px 1px #000;}
+#footersidebar li a, #footersidebar li a:visited{color:#999}
+#footersidebar li a:hover{color:#ccc;}
+
+#footersidebar .button, #footersidebar .button:visited, #footersidebar .button:hover{color:#fff;}
+
+
+/*============================================== FOOTER SECTION ==============================================*/
+#outerfooter{ background:#101010;  border-top:solid 1px #4d4d4d}
+#footer{color:#888;}
+#footer a, #footer a:visited{color:#585858;}
+#footer a:hover{color:#7aca2e;}
+#toTop{color:#585858}
+#toTop:hover{color:#7aca2e;}

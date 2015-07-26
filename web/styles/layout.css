@@ -1,0 +1,141 @@
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+	#topnav{display:block !important;}
+	.flex-direction-nav .flex-next {right: -40px; *right:0;}
+	.flex-direction-nav .flex-prev {left: -40px; *left: 0;}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#bodychild{width:100%;}
+	
+	/*============================================== MENU SECTION ==============================================*/
+	#topnav{display:block !important;}
+	
+	/*============================================== SLIDER SECTION ==============================================*/
+	.flex-caption{width:40%; top:10%;}
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	.padcontent{padding-right:12.8%;}
+	#content.positionright .padcontent{padding-left:12.8%; padding-right:0}
+	.package-box .text2{font-size:15px;}
+	
+	/* pricing box */
+	ul.list-box .price{font-size:20px !important;}
+	ul.list-box > li{width:175px !important; margin-right:10px !important;}
+
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	/* Portfolio */
+	.ts-display-pf-col-4 li{width:170px; }
+	.ts-display-pf-col-4 .ts-display-pf-img{width:160px; height:100%}
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{width:160px; height:100%}
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{width:160px; height:100%}
+	
+	
+	/*============================================== SIDEBAR SECTION ==============================================*/
+	.rp-widget li .smalldate{background:transparent; padding:0}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#bodychild{width:100%;}
+	#outerheader{height:auto;}
+	
+	/*============================================== HEADER SECTION ==============================================*/
+	#logo{text-align:center;}
+	#logo img{margin:0 auto; max-width:100%;}
+	#headerright{padding:0; text-align:center;}
+	#navigation{text-align:center; clear:both; height:auto; width:100%}
+	.sf-menu a{background:transparent !important; border:0 !important}
+	.sf-menu > li{border:0 !important; display:none;}
+	nav{margin:0 0 20px 0; float:none; }
+	.js .tinynav { display: block; display: inline-block; text-align:left ; margin:0 0 0 0; border:0; width:100%; clear:both}/* mobile dropdown */
+    .js #topnav { display: none }
+		
+	/*============================================== SLIDER SECTION ==============================================*/
+	#slidercontainer{height:auto;}
+	.flex-caption{display:none;}
+	
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	#content.positionright, #content.positionleft{background:transparent;}
+	.padcontent{padding-right:0;}
+	#content.positionright .padcontent{padding-left:0; padding-right:0}
+	.highlight-content{clear:both; text-align:center}
+	.content-box .button{margin-bottom:20px; display:inline-block}
+	.package-box{ background:#f9f9f9}
+	
+	/* pricing box */
+	ul.list-box > li{margin-bottom:20px; width:100% !important}
+	ul.list-box .price-text{background:transparent;}
+
+	
+	
+		
+	/*============================================== BLOG SECTION ==============================================*/
+	.post{padding-bottom:50px; margin-bottom:50px;}
+	.posttitle{margin-bottom:5px;}
+	.wp-pagenavi{margin-bottom:30px;}
+	.entry-utility .comm{float:none; padding:0 0 0 10px}
+	
+	/*============================================== SIDEBAR SECTION ==============================================*/
+	#sidebar{background:transparent !important;}
+	#sidebar .widget-container{margin-bottom:20px; padding:20px 0 0 0;}
+	
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	.ts-display-pf-col-4 li{width:300px;}
+	.ts-display-pf-col-4 .ts-display-pf-img{
+		width:286px;
+	}
+	
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:286px;
+	}
+	
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:286px;
+	}
+	
+	#toTop{display:none !important;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#bodychild{width:100%;}
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	.ts-display-pf-col-4 li{width:420px;}
+	.ts-display-pf-col-4 .ts-display-pf-img{
+		width:406px;
+	}
+	
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:406px;
+	}
+	
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:406px;
+	}
+	
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#bodychild{width:100%;}
+	
+	/*============================================== GENERAL SECTION ==============================================*/
+	.button.large{padding:8px 20px 7px 20px;}
+	
+	/*============================================== BLOG SECTION ==============================================*/
+	.commentlist ol{padding-left:20px;}
+	.avatar{display:none;}
+	.comment-body{margin:0;}
+
+}
