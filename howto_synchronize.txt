@@ -1,0 +1,4 @@
+git commit
+
+./update-chronojump-web.sh
+(passwd will be gandi passwd)
