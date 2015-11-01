@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+<!--  
+================================
+Update Chronojump version
+
+- Change 1.5.4 (five times including this)
+- Change version date
+- Change link to version changes
+================================
+-->
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Chronojump-Boscosystem</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/inner.css" />
+    <link rel="stylesheet" href="styles/color.css" />
+    <link rel="stylesheet" href="styles/prettyPhoto.css"  media="screen" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    
+</head>
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+            <div id="outertheheader">
+                
+                <header id="top">
+                    <div class="container">
+                        <div class="twelve columns">
+                            <div id="logo"  class="three columns alpha"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                            <section id="navigation">
+                                <nav id="nav-wrap">
+                                    <ul id="topnav" class="sf-menu">
+					    <li style="float:right; padding:0px 0px;"><a href="index_es.html">Español</a></li>
+					    <li style="float:right; padding:0px 26px; color:#ffcc01;">ENGLISH</li> <!--not in the tinynav dropdown mobile-->
+					    <br><br><br>
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="tests.html">Tests</a></li>
+					    <li><a href="software.html">Software</a></li>
+					    <li><a href="pricing.html">Pricing</a></li>
+					    <li><a href="courses.html">Courses</a></li>
+					    <li><a href="contact.html">Contact</a></li>
+                                    </ul><!-- topnav -->
+                                </nav><!-- nav -->	
+                                <div class="clear"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </header>
+                
+                <div id="pagetitlecontainer">
+                    <div class="container">
+                    	<div class="twelve columns">
+                        	<h1 class="pagetitle">Chronojump software on OSX El Capitan</h1>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>
+        <!-- END HEADER -->
+        
+ 
+        
+        <!-- MAIN CONTENT -->
+	<div id="outermain">
+		<div class="container">
+
+			<section id="maincontent" class="twelve columns">
+
+				Chronojump is not easy to install right now on in the new IOS: <span class="highlight2">El&nbsp;Capitan</span>. The only solution we found at the moment is written on this page. Obviously we hope to find a better solution soon and then publish here how to revert the changes you made.
+
+				<p><h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Installation instructions (do this only one time)</h3>
+				<ol>
+					<li>Disable csrutil</li>
+					<ul>
+						<li>Boot to Recovery OS: You need to restart your computer holding down the Command and R keys (<kbd>&#x2318;</kbd>+<kbd>R</kbd>) at startup.</li>
+						<li>Launch Terminal from the Utilities (or Tools) menu.</li>
+						<li>Enter this command: <span class="highlight2">csrutil disable</span><kbd>↩</kbd></li>
+						<li>Reboot the machine</li>
+					</ul>
+					<li><a href="http://support.apple.com/kb/HT5290?viewlocale=en_US">Deactivate Gatekeeper</a></li>
+					<li>Install the last version of R: <a href="http://cran.cnr.berkeley.edu/bin/macosx/R-latest.pkg">Latest R version for MacOSX</a></li>
+					<li>Install the <a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg">newest Chronopic driver</a></li>
+					<li>Install <a href="http://ftp.gnome.org/pub/GNOME/binaries/mac/chronojump/Chronojump-1.5.4-x86_64.dmg">Chronojump 1.5.4</a>. On the end of the installation it will ask if you want to open it, DO NOT OPEN IT because it will not work.</li>
+					<li>Create a link to Chronojump</li>
+					<ul>
+						<li>Open Finder, press the keys: <kbd>&#x2318;</kbd>+<kbd>&#x21E7;</kbd>+<kbd>G</kbd></li>
+						<li>Write this: <span class="highlight2">/Applications/Chronojump.app/Contents/MacOS/</span><kbd>↩</kbd></li>
+						<li>Select the file "Chronojump" and "Make alias" or press <kbd>&#x2318;</kbd>+<kbd>L</kbd></li>
+						<li>An "Chronojump.alias" file will be created. Move the new file to the Desktop.</li>
+					</ul>
+				</ol>
+
+				<h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Execute Chronojump</h3>
+
+				Open the "Chronojump.alias" file on your Desktop.
+
+			<div class="separator small"></div>
+
+			If you have any problem write to support@chronojump.org
+
+			</section>
+			<div class="clear"></div><!-- clear float --> 
+
+
+		</div>
+                
+	     </div> 
+            </div>
+        </div>
+
+        <!-- END MAIN CONTENT -->
+        
+        <div id="footerstrip"><div></div></div>
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div class="container">
+                <div id="footersidebarcontainer" class="twelve columns"> 
+                    <footer id="footersidebar">
+                    <div id="footcol1"  class="four columns alpha">
+                    <ul>
+                        <li class="widget-container"><p><img src="images/logo.png" alt=""></p></li>
+			<li><a href="about.html">about us</a></li>
+                    </ul>
+                    </div>
+                    <div id="footcol2"  class="six columns">
+                        <ul>
+                            <li class="widget-container">
+                                <h2 class="widget-title">Relevant documentation</h2>
+                                <ul>
+                                    <li><a href="http://www.cafyd.com/REVISTA/ojs/index.php/ricyde/article/download/528/288">Creation and validation of tools (english article)</a></li>
+                                    <li><a href="http://www.tdx.cat/handle/10803/83302">Creation and validation of tools (spanish PhD)</a></li>
+                                    <li><a href="http://chronojump.org/docs/chronojump_manual_en.pdf">Software manual</a></li>
+                                    <li><a href="documents.html">(See all documents)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footcol3"  class="two columns omega">
+                        <ul>
+                          <li class="widget-container">
+                                <h2 class="widget-title">Social</h2>
+                                <ul>
+                                    <li><a href="http://forum.chronojump.org">Forum</a></li>
+                                    <li><a href="https://twitter.com/boscosystem">Twitter</a></li>
+                                    <li><a href="http://www.flickr.com/photos/98402533@N08/sets/">Photos</a></li>
+                                    <li><a href="https://www.youtube.com/user/Chronojump">Videos</a></li>
+                                    <li><a href="server.html">Server (share data)</a></li>
+                                </ul>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    </footer>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div class="container">
+        	<div id="footercontainer" class="twelve columns">
+            	<footer id="footer">CHRONOJUMP-BOSCOSYSTEM - free software - open hardware - reliable - affordable</footer>
+                <div id="toTop">^ Back to Top</div>
+            </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+	</div><!-- end outercontainer -->
+</div><!-- end bodychild -->
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+
+<!-- jQuery Easing -->
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+
+<!-- jQuery PrettyPhoto -->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+<!-- jQuery Fade -->
+<script type="text/javascript" src="js/fade.js"></script>
+
+
+<!-- jQuery Dropdown Mobile -->
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
