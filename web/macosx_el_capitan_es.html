@@ -107,34 +107,51 @@ Update Chronojump version
 		<div class="container">
 
 			<section id="maincontent" class="twelve columns">
+				
+				Chronojump 1.5.5 y versiones posteriores deberían funcionar correctamente en MacOSX <span class="highlight2">El&nbsp;Capitán</span>.
+				<br>Esta página contiene instrucciones para restaurar su sistema si usted desactivó csrutil para que funcionase la antigua versión 1.5.4 de Chronojump.
+				<br>Si usted no desactivó csrutil, entonces no necesita realizar nada de lo que se indica en esta página, simplemente instale Chronojump normalmente.
 
-				Chronojump no es fácil de instalar en el nuevo IOS: <span class="highlight2">El&nbsp;Capitan</span>. En esta página se describe la única solución que hemos encontrado hasta el momento. Cuando encontremos una solución mejor, lo publicaremos aquí e indicaremos cómo deshacer los cambios realizados.
+				<p><h3>Reactivar csrutil</h3>
+				<ul>
+					<li>Reiniciar al Recovery OS: Es necesario reiniciar el ordenador manteniendo pulsadas las teclas Command y R (<kbd>&#x2318;</kbd>+<kbd>R</kbd>).</li>
+					<li>Abrir un Terminal en el menú de Utilities (o Tools).</li>
+					<li>Escribir este comando: <span class="highlight2">csrutil enable</span><kbd>↩</kbd></li>
+					<li>Reiniciar el ordenador</li>
+				</ul>
 
-				<p><h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Instrucciones para la instalación (realizar sólo una vez)</h3>
-				<ol>
-					<li>Desactivar csrutil</li>
-					<ul>
-						<li>Reiniciar al Recovery OS: Es necesario reiniciar el ordenador manteniendo pulsadas las teclas Command y R (<kbd>&#x2318;</kbd>+<kbd>R</kbd>).</li>
-						<li>Abrir un Terminal en el menú de Utilities (o Tools).</li>
-						<li>Escribir este comando: <span class="highlight2">csrutil disable</span><kbd>↩</kbd></li>
-						<li>Reiniciar el ordenador</li>
-					</ul>
-					<li><a href="http://support.apple.com/kb/HT5290?viewlocale=es_ES">Desactive Gatekeeper</a></li>
-					<li>Instale la última versión de R: <a href="http://cran.cnr.berkeley.edu/bin/macosx/R-latest.pkg">Última versión de R para MacOSX</a></li>
-					<li>Instale el <a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg">último driver de Chronopic</a></li>
-					<li>Instale <a href="http://ftp.gnome.org/pub/GNOME/binaries/mac/chronojump/Chronojump-1.5.4-x86_64.dmg">Chronojump 1.5.4</a> en el último paso de la instalación le pedirá si quiere que lo ejecute. No lo haga debido a que no funcionará.</li>
-					<li>Cree un link a Chronojump</li>
-					<ul>
-						<li>Abra el Finder, pulse las teclas: <kbd>&#x2318;</kbd>+<kbd>&#x21E7;</kbd>+<kbd>G</kbd></li>
-						<li>Escriba esto: <span class="highlight2">/Applications/Chronojump.app/Contents/MacOS/</span><kbd>↩</kbd></li>
-						<li>Seleccione el archivo "Chronojump" y "Make alias" o "Crear alias" o pulse <kbd>&#x2318;</kbd>+<kbd>L</kbd></li>
-						<li>Se creará un archivo "Chronojump.alias". Muévalo a su escritorio.</li>
-					</ul>
-				</ol>
+				<div class="separator shadow small"></div>
 
-				<h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Ejecutar Chronojump</h3>
+				<p><h3>Instrucciones ANTIGUAS para Chronojump 1.5.4 en El Capitán (desactivar csrutil)</h3>
+				
+				<font size="1">
+				
+					<p><h5>Instrucciones para la instalación (realizar sólo una vez)</h5>
+					<ol>
+						<li>Desactivar csrutil</li>
+						<ul>
+							<li>Reiniciar al Recovery OS: Es necesario reiniciar el ordenador manteniendo pulsadas las teclas Command y R (<kbd>&#x2318;</kbd>+<kbd>R</kbd>).</li>
+							<li>Abrir un Terminal en el menú de Utilities (o Tools).</li>
+							<li>Escribir este comando: <span class="highlight2">csrutil disable</span><kbd>↩</kbd></li>
+							<li>Reiniciar el ordenador</li>
+						</ul>
+						<li><a href="http://support.apple.com/kb/HT5290?viewlocale=es_ES">Desactive Gatekeeper</a></li>
+						<li>Instale la última versión de R: <a href="http://cran.cnr.berkeley.edu/bin/macosx/R-latest.pkg">Última versión de R para MacOSX</a></li>
+						<li>Instale el <a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg">último driver de Chronopic</a></li>
+						<li>Instale <a href="http://ftp.gnome.org/pub/GNOME/binaries/mac/chronojump/Chronojump-1.5.4-x86_64.dmg">Chronojump 1.5.4</a> en el último paso de la instalación le pedirá si quiere que lo ejecute. No lo haga debido a que no funcionará.</li>
+						<li>Cree un link a Chronojump</li>
+						<ul>
+							<li>Abra el Finder, pulse las teclas: <kbd>&#x2318;</kbd>+<kbd>&#x21E7;</kbd>+<kbd>G</kbd></li>
+							<li>Escriba esto: <span class="highlight2">/Applications/Chronojump.app/Contents/MacOS/</span><kbd>↩</kbd></li>
+							<li>Seleccione el archivo "Chronojump" y "Make alias" o "Crear alias" o pulse <kbd>&#x2318;</kbd>+<kbd>L</kbd></li>
+							<li>Se creará un archivo "Chronojump.alias". Muévalo a su escritorio.</li>
+						</ul>
+					</ol>
 
-				Abra el archivo "Chronojump.alias" en su escritorio.
+					<h5>Ejecutar Chronojump</h5>
+
+					Abra el archivo "Chronojump.alias" en su escritorio.
+				</font>
 
 			<div class="separator small"></div>
 

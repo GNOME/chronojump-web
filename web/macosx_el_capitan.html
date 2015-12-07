@@ -107,33 +107,52 @@ Update Chronojump version
 
 			<section id="maincontent" class="twelve columns">
 
-				Chronojump is not easy to install right now on in the new IOS: <span class="highlight2">El&nbsp;Capitan</span>. The only solution we found at the moment is written on this page. Obviously we hope to find a better solution soon and then publish here how to revert the changes you made.
+				Chronojump should work on <span class="highlight2">El&nbsp;Capitán</span> since Chronojump version 1.5.5.
+				<br>This page contains instructions to restore your system if you have disabled csrutil to make old Chronojump 1.5.4 work.
+				<br>If you have not disabled csrutil, you don't need to do anything, just install Chronojump normally.
+				
+				<p><h3>Reenable csrutil</h3>
+					
+				<ul>	
+					<li>Boot to Recovery OS: You need to restart your computer holding down the Command and R keys (<kbd>&#x2318;</kbd>+<kbd>R</kbd>) at startup.</li>
+					<li>Launch Terminal from the Utilities (or Tools) menu.</li>
+					<li>Enter this command: <span class="highlight2">csrutil enable</span><kbd>↩</kbd></li>
+					<li>Reboot the machine</li>
+				</ul>
+				
+				<div class="separator shadow small"></div>
+				
+				<p><h3>OLD Instructions for Chronojump 1.5.4 on El Capitán (Disable csrutil)</h3>
 
-				<p><h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Installation instructions (do this only one time)</h3>
-				<ol>
-					<li>Disable csrutil</li>
-					<ul>
-						<li>Boot to Recovery OS: You need to restart your computer holding down the Command and R keys (<kbd>&#x2318;</kbd>+<kbd>R</kbd>) at startup.</li>
-						<li>Launch Terminal from the Utilities (or Tools) menu.</li>
-						<li>Enter this command: <span class="highlight2">csrutil disable</span><kbd>↩</kbd></li>
-						<li>Reboot the machine</li>
-					</ul>
-					<li><a href="http://support.apple.com/kb/HT5290?viewlocale=en_US">Deactivate Gatekeeper</a></li>
-					<li>Install the last version of R: <a href="http://cran.cnr.berkeley.edu/bin/macosx/R-latest.pkg">Latest R version for MacOSX</a></li>
-					<li>Install the <a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg">newest Chronopic driver</a></li>
-					<li>Install <a href="http://ftp.gnome.org/pub/GNOME/binaries/mac/chronojump/Chronojump-1.5.4-x86_64.dmg">Chronojump 1.5.4</a>. On the end of the installation it will ask if you want to open it, DO NOT OPEN IT because it will not work.</li>
-					<li>Create a link to Chronojump</li>
-					<ul>
-						<li>Open Finder, press the keys: <kbd>&#x2318;</kbd>+<kbd>&#x21E7;</kbd>+<kbd>G</kbd></li>
-						<li>Write this: <span class="highlight2">/Applications/Chronojump.app/Contents/MacOS/</span><kbd>↩</kbd></li>
-						<li>Select the file "Chronojump" and "Make alias" or press <kbd>&#x2318;</kbd>+<kbd>L</kbd></li>
-						<li>An "Chronojump.alias" file will be created. Move the new file to the Desktop.</li>
-					</ul>
-				</ol>
+				<font size="1">
 
-				<h3><i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;Execute Chronojump</h3>
+					<p><h5>Installation instructions (do this only one time)</h3>
+					<ol>
+						<li>Disable csrutil</li>
+						<ul>
+							<li>Boot to Recovery OS: You need to restart your computer holding down the Command and R keys (<kbd>&#x2318;</kbd>+<kbd>R</kbd>) at startup.</li>
+							<li>Launch Terminal from the Utilities (or Tools) menu.</li>
+							<li>Enter this command: <span class="highlight2">csrutil disable</span><kbd>↩</kbd></li>
+							<li>Reboot the machine</li>
+						</ul>
+						<li><a href="http://support.apple.com/kb/HT5290?viewlocale=en_US">Deactivate Gatekeeper</a></li>
+						<li>Install the last version of R: <a href="http://cran.cnr.berkeley.edu/bin/macosx/R-latest.pkg">Latest R version for MacOSX</a></li>
+						<li>Install the <a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_3.dmg">newest Chronopic driver</a></li>
+						<li>Install <a href="http://ftp.gnome.org/pub/GNOME/binaries/mac/chronojump/Chronojump-1.5.4-x86_64.dmg">Chronojump 1.5.4</a>. On the end of the installation it will ask if you want to open it, DO NOT OPEN IT because it will not work.</li>
+						<li>Create a link to Chronojump</li>
+						<ul>
+							<li>Open Finder, press the keys: <kbd>&#x2318;</kbd>+<kbd>&#x21E7;</kbd>+<kbd>G</kbd></li>
+							<li>Write this: <span class="highlight2">/Applications/Chronojump.app/Contents/MacOS/</span><kbd>↩</kbd></li>
+							<li>Select the file "Chronojump" and "Make alias" or press <kbd>&#x2318;</kbd>+<kbd>L</kbd></li>
+							<li>An "Chronojump.alias" file will be created. Move the new file to the Desktop.</li>
+						</ul>
+					</ol>
 
-				Open the "Chronojump.alias" file on your Desktop.
+					<h5>Execute Chronojump</h3>
+
+					Open the "Chronojump.alias" file on your Desktop.
+				</font>
+
 
 			<div class="separator small"></div>
 
