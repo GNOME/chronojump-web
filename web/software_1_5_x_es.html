@@ -112,8 +112,54 @@
 			    
 			    <div id="1_5_5">
 				    <h2>Software Chronojump: 1.5.5  (7 diciembre 2015)</h2>
+				    
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-3x"></i>&nbsp;&nbsp;Cambios principales</span></h3>
+				    <ul>
+					    <li>Añadida predicción 1RM con métodos indirectos (Brzycky, Epley, Lander, ...)</li>
+					    <li>En los cálculos excéntricos se usa sólo la fase de tierra</li>
+					    <li>Añadido media y desviación estándard en la tabla de análisis del encoder</li>
+					    <li>Añadido "Overview of Encoder session" en el menú</li>
+				    </ul>
 
-				    (Pendiente añadir información)
+				    <h3><span class="highlight2"><i class="fa fa-laptop fa-2x"></i>&nbsp;&nbsp;Específico del sistema</span></h3>
+
+				    MacOSX:
+				    <ul>
+					    <li>Esta versión debería funcionar correctamente en OSX El Capitan</li>
+					    <li>La autodetección de hardware se ha desactivado de forma predeterminada en OSX</li>
+				    </ul>
+				    Windows:
+				    <ul>
+					    <li>Todos los gráficos de Windows deberían mostrar correctamente los acentos</li>
+					    <li>Mejor exportación de señal a CSV</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Cambios menores</span></h3>
+
+				    Saltos:
+				    <ul>
+					    <li>Mejor cálculo de potencia en saltos con TC</li>
+				    </ul>
+				    Encoder:
+				    <ul>
+					    <li>Al cruzar variables con la velocidad en Y, se muestra la regresión con una recta en lugar de una curva</li>
+					    <li>Mejoradas las "estrellas" de significación al cruzar variables</li>
+					    <li>Mejor cálculo del desplazamiento en la configuración MOVPULLEY</li>
+					    <li>Mejor ajuste de curvas al cruzar variables con más de una serie</li>
+				    </ul>
+				    Errores arreglados:
+				    <ul>
+					    <li>Arreglado fallo al calcular la fuerza en el modo LINEARONPLANE</li>
+					    <li>Arreglado fallo que sucedía muy pocas veces provocando que las fases excéntricas y concéntricas se detectasen al revés</li>
+					    <li>Arreglado fallo con el signo de "&nbsp;'&nbsp;" en las palabras traducidas del encoder (afectaba a la traducción al catalán)</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Traducciones</span></h3>
+				    <ul>
+					    <li>Actualizadas las traducciones: castellano (99%), catalán (100%), checo (99%), portugués de Brasil (98%), sueco (20%).</li>
+					    <li><a href="https://l10n.gnome.org/module/chronojump/">Ver estadísticas de traducciones</a>.</li>
+				    </ul>
+
 			    </div>
 
 			    <div class="separator shadow"></div>

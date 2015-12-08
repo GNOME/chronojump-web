@@ -108,11 +108,56 @@
 				    <li><a href="#1_5_1" data-value="all">1.5.1</a><br>2015/5/29</li>
 				    <li><a href="#1_5_0" data-value="all">1.5.0</a><br>2015/3/17</li>
 			    </ul>
-			    
-			    <div id="1_5_2">
+
+			    <div id="1_5_5">
 				    <h2>Chronojump software: 1.5.5  (2015 Dic 7)</h2>
 
-				    Information will be added soon.
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-3x"></i>&nbsp;&nbsp;Main changes</span></h3>
+				    <ul>
+					    <li>Added 1RM Prediction with indirect methods (eg. Brzycky, Epley, Lander, ...)</li>
+					    <li>Eccentric calculations use only ground phase</li>
+					    <li>Added AVG and SD on encoder analyze table</li>
+					    <li>Added Overview of Encoder session on menu</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-laptop fa-2x"></i>&nbsp;&nbsp;System specific</span></h3>
+
+				    MacOSX specific:
+				    <ul>
+					    <li>This version should work on OSX El Capitan</li>
+					    <li>Hardware Autodetect Inactive by default on OSX</li>
+				    </ul>
+				    Windows specific:
+				    <ul>
+					    <li>All graphs on Windows will display latin characters correctly now</li>
+					    <li>Safer encoder signal export to CSV</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Minor changes</span></h3>
+
+				    Jumps:
+				    <ul>
+					    <li>Better power calculation on jumps with TC</li>
+				    </ul>
+				    Encoder:
+				    <ul>
+					    <li>Cross variables with speed at Y, regression with line (not curve)</li>
+					    <li>Better signification "stars" in encoder cross graphs</li>
+					    <li>Better displacement calculation on MOVPULLEY configs</li>
+					    <li>Better fit on cross variables with more than one serie</li>
+				    </ul>
+				    Bugs fixed:
+				    <ul>
+					    <li>Fixed crash in force calculation on LINEARONPLANE mode</li>
+					    <li>Fixed bug very rare on eccentric were phases are detected inversed</li>
+					    <li>Fixed crash by "&nbsp;'&nbsp;" sign on translated words on encoder (found problem on catalan translation)</li>
+				    </ul>
+
+				    <h3><span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span></h3>
+				    <ul>
+					    <li>Updated translations: Brazilian Portuguese (98%), Catalan (100%), Czech (99%), Spanish (99%), Swedish (20%).</li>
+					    <li><a href="https://l10n.gnome.org/module/chronojump/">See translation statistics</a>.</li>
+				    </ul>
 			    </div>
 
 			    <div class="separator shadow"></div>
