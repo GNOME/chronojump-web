@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Chronojump-Boscosystem</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/inner.css" />
+    <link rel="stylesheet" href="styles/color.css" />
+    <link rel="stylesheet" href="styles/prettyPhoto.css"  media="screen" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    
+</head>
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+            <div id="outertheheader">
+                
+                <header id="top">
+                    <div class="container">
+                        <div class="twelve columns">
+                            <div id="logo"  class="three columns alpha"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                            <section id="navigation">
+                                <nav id="nav-wrap">
+                                    <ul id="topnav" class="sf-menu">
+					    <li style="float:right; padding:0px 0px;"><a href="index_es.html">Español</a></li>
+					    <li style="float:right; padding:0px 26px; color:#ffcc01;">ENGLISH</li> <!--not in the tinynav dropdown mobile-->
+					    <br><br><br>
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="tests.html">Tests</a></li>
+					    <li class="current"><a href="software.html">Software</a></li>
+					    <li><a href="pricing.html">Pricing</a></li>
+					    <li><a href="courses.html">Courses</a></li>
+					    <li><a href="contact.html">Contact</a></li>
+                                    </ul><!-- topnav -->
+                                </nav><!-- nav -->	
+                                <div class="clear"></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </header>
+                
+                <div id="pagetitlecontainer">
+                    <div class="container">
+                    	<div class="twelve columns">
+                        	<h1 class="pagetitle">Chronojump software</h1>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>
+        <!-- END HEADER -->
+        
+ 
+        
+        <!-- MAIN CONTENT -->
+	<div id="outermain">
+		<div class="container">
+
+		  <section id="maincontent" class="twelve columns">
+		    <section class="positionleft seven columns alpha">
+
+			    <!--
+			    Select version:
+			    <ul id="filter" class="controlnav">
+				    <li><a href="#1_6_0" data-value="all">1.6.0</a><br>2016/3/8</li>
+			    </ul>
+			    -->
+			    
+			    <div id="1_6_0">
+				    <h2>Chronojump software: 1.6.0  (2016 March 10)</h2>
+
+				    <i class="fa fa-thumbs-up fa-3x"></i>&nbsp;&nbsp;Major changes
+				    <ul>
+					    <li>Instant values on encoder analyze single repetition. <a href="https://youtu.be/cJBN8b79yUM?list=PL7Z3WKkFyPRMwKnnvDURQllrSeKV4VeuP">See this video</a>. Able to see instantaneous data and statistics from one instant to another.</li>
+					    <li>Encoder improved smoothing. Great on start/end of an inertial repetition.</li>
+					    <li>Geared down or up on inertial machines from encoder configration window.</li>
+					    <li>Added capture instructions on inertial machines.</li>
+				    </ul>
+
+				    <i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Minor changes
+				    <ul>
+					    <li>On encoder capture tab clicking on "Best" will select best "mean power" or best "max speed" or whatever main variable is being evaluated.</li>
+					    <li>Different Left Right regression lines on cross variables.</li>
+					    <li>crossVariables adjusted with line (except power/load and power/speed).</li>
+					    <li>Analyze table now shows Inertia and MAX.</li>
+					    <li>Improved encoder and preferences graphical interface.</li>
+					    <li>Session load has a filter name.</li>
+					    <li>Person can be deleted from PersonSelect (tablets).</li>
+					    <li>Better/faster smoothings on eccentric-concentric based on splines.</li>
+					    <li>A set can be loaded from analyze tab.</li>
+					    <li>Minimal height different for inertial and not inertial.</li>
+					    <li>Recording time default to 60s.</li>
+					    <li>Implemented debug mode for encoder.</li>
+					    <li>Jumps, runs: tab on show graph / table on all tests (like on encoder analyze).</li>
+					    <li>Runs: double contacts time from 1000ms to 300ms.</li>
+				    </ul>
+
+
+				    <i class="fa fa-windows fa-2x"></i>&nbsp;&nbsp;Windows
+				    <ul>
+					    <li>New icon for install (different than executing icon).</li>
+				    </ul>
+
+
+				    <i class="fa fa-apple fa-2x"></i>&nbsp;&nbsp;OSX
+				    <ul>
+						    <li>Fixed sound on OSX.</li>
+						    <li>Better call of Rscript on OSX.</li>
+						    <li>Better check of R on OSX and cannot run "Power" without it.</li>
+					    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bug fa-2x"></i>&nbsp;&nbsp;Bugs fixed</span> 
+				    <ul>
+					    <li>Now "No curves found" works better on inertial.</li>
+					    <li>Fixed: On load an inertial set, no more automatically selects ecc-con always.</li>
+					    <li>Fixed and cleaned the code for MOVPULLEY inertial machines.</li>
+					    <li>Disabled legend translation on paintCrossVariables (problematic on some Wins and OSX).</li>
+					    <li>Fixed problem in encoder analyze table SD (was using also avg row).</li>
+					    <li>Fixed not saving 1RM on some locales.</li>
+					    <li>Fixed units in optimal Inertia momentum.</li>
+					    <li>Safer ' to \" on all SQL calls (fixes catalan strings with ').</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span> 
+				    <ul>
+						<li>Updated Catalan, Czech, German, Spanish, Serbian translations.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-smile-o fa-2x"></i>&nbsp;&nbsp;Acknowledgements</span>
+				    <ul>
+					    <li>Thanks to Joan Aguilera and Marc Quílez for all the software tests they have done.</li>
+				    </ul>
+
+			    </div> <!-- 1_6_0 -->
+			    
+			    <div class="separator "></div>
+
+			    <br><a href="software_1_5_x.html">Older versions (2015)</a>
+			    
+		
+		</section>
+		<section class="one column">&nbsp;</section>
+		<section class="positionright four columns alpha">	
+			
+			<h3><span class="highlight1"><i class="fa fa-comments fa-2x"></i>&nbsp;&nbsp;Post comments</span></h3>
+			If software hangs or crashes, re-open it and click on "Send error log". Also add your email and describe the problem you found.
+			<br><br>Write comments here for other uses like questions, new features, ...
+			<br><p>
+			<script data-isso="/isso" src="/isso/js/embed.min.js"></script>
+			<div id="isso-thread"></div>
+		</section>
+	      </section>
+                
+            </div>
+        </div>
+
+        <!-- END MAIN CONTENT -->
+        
+        <div id="footerstrip"><div></div></div>
+        
+        <!-- FOOTER SIDEBAR -->
+        <div id="outerfootersidebar">
+        	<div class="container">
+                <div id="footersidebarcontainer" class="twelve columns"> 
+                    <footer id="footersidebar">
+                    <div id="footcol1"  class="four columns alpha">
+                    <ul>
+                        <li class="widget-container"><p><img src="images/logo.png" alt=""></p></li>
+			<li><a href="about.html">about us</a></li>
+                    </ul>
+                    </div>
+                    <div id="footcol2"  class="six columns">
+                        <ul>
+                            <li class="widget-container">
+                                <h2 class="widget-title">Relevant documentation</h2>
+                                <ul>
+                                    <li><a href="http://www.cafyd.com/REVISTA/ojs/index.php/ricyde/article/download/528/288">Creation and validation of tools (english article)</a></li>
+                                    <li><a href="http://www.tdx.cat/handle/10803/83302">Creation and validation of tools (spanish PhD)</a></li>
+                                    <li><a href="http://chronojump.org/docs/chronojump_manual_en.pdf">Software manual</a></li>
+                                    <li><a href="documents.html">(See all documents)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="footcol3"  class="two columns omega">
+                        <ul>
+                          <li class="widget-container">
+                                <h2 class="widget-title">Social</h2>
+                                <ul>
+                                    <li><a href="http://forum.chronojump.org">Forum</a></li>
+                                    <li><a href="https://twitter.com/boscosystem">Twitter</a></li>
+                                    <li><a href="http://www.flickr.com/photos/98402533@N08/sets/">Photos</a></li>
+                                    <li><a href="https://www.youtube.com/user/Chronojump">Videos</a></li>
+                                    <li><a href="server.html">Server (share data)</a></li>
+                                </ul>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    </footer>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- END FOOTER SIDEBAR -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div class="container">
+        	<div id="footercontainer" class="twelve columns">
+            	<footer id="footer">CHRONOJUMP-BOSCOSYSTEM - free software - open hardware - reliable - affordable</footer>
+                <div id="toTop">^ Back to Top</div>
+            </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+	</div><!-- end outercontainer -->
+</div><!-- end bodychild -->
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+
+<!-- jQuery Easing -->
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+
+<!-- jQuery PrettyPhoto -->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
+<!-- jQuery Fade -->
+<script type="text/javascript" src="js/fade.js"></script>
+
+
+<!-- jQuery Dropdown Mobile -->
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
