@@ -100,13 +100,86 @@
 		  <section id="maincontent" class="twelve columns">
 		    <section class="positionleft seven columns alpha">
 			
-			    <!--
 			    Seleccione versión:
 			    <ul id="filter" class="controlnav">
+				    <li><a href="#1_6_1" data-value="all">1.6.1</a><br>15/6/2016</li>
 				    <li><a href="#1_6_0" data-value="all">1.6.0</a><br>10/3/2016</li>
 			    </ul>
-			    -->
 			    
+			    <div id="1_6_1">
+				    <h2>Chronojump software: 1.6.1  (2016 June 15)</h2>
+
+				    <span class="highlight2"><i class="fa fa-circle-o fa-2x"></i>&nbsp;&nbsp;Cambios globales</span>
+				    <ul>
+					    <li>4 modos en la ventana principal.</li>
+					    <li>El menú de sesión es diferente en función del modo.</li>
+					    <li>La ventana de preferencias se adapta al modo.</li>
+					    <li>En la exportación de archivos se sugieren nombres automáticos.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Saltos, Carreras y Otros tests</span>
+				    <ul>
+					    <li>Los gráficos de tests simples se han mejorado notablemente. Con una barra animada, un valor en el centro, más sencillos de entender y de comparar con el propio sujeto y otros de la sesión.</li>
+					    <li>El gráfico de las carreras con tramos se ha mejorado notablemente. Se muestra la distancia, tiempo y velocidad. La X es el tiempo. Se muestra velocidad 0 al inicio si se comienza desde la fotocélula.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bar-chart fa-2x"></i>&nbsp;&nbsp;Encoder</span>
+				    <ul>
+					    <li>El encoder se ha separado en dos modos: Gravitacional e inertial. Esto afecta a la captura, análisis, selección de encoder, cargar serie, resumen de la sesión, 1RM, perfil neuromuscular, ...</li>
+					    <li>Gran cambio en el análisis con 4 modos: Serie actual, repeticiones guardadas, intersesión e intersujeto. Ahora es más fácil y útil gestionar las series y repeticiones. En la intersesión se permite tener la fecha en la X.</li>
+					    <li>Feedback automático en la captura calculado en la propia serie. Se puede obtener un feedback automático de cada repetición basado en el valor máximo detectado en la serie que se está capturando al mismo tiempo. Ver campanas.</li>
+					    <li>Se guarda la mejor repetición ecc-con a partir de la media de ambos. Antes se usaba únicamente la fase concéntrica.</li>
+					    <li>Mejor interface gráfica para la captura: se muestra la barra justo al acabar cada excéntrico o concéntrico. Ya no hay que esperar a que pasen dos fases cosa que dificultaba la interpretación.</li>
+					    <li>Mejor interface gráfica para la captura en inercial:</li>
+					    <ul>
+						    <li>Se muestran instrucciones.</li>
+						    <li>La primera fase excéntrica se ve en gris.</li>
+						    <li>Se muestran dos líneas en el gráfico en tiempo real (cuerpo y "disco").</li>
+					    </ul>
+					    <li>Mejor diferencia de color entre las barras de captura en excéntrico/concéntrico.</li>
+					    <li>El cálculo del momento de inercia tiene ahora un tiempo predeterminado (y máximo) de 120 s.</li>
+					    <li>Al cruzar variables se usa la masa extra en lugar de la masa total.</li>
+					    <li>Mejor corte de fases en inercial. Ahora se corta por la velocidad, igual que en gravitatorio.</li>
+					    <li>Cambios relativos al 1RM:</li>
+					    <ul>
+						    <li>La ventana de 1RM es intersesión. El 1RM de una misma persona y ejercicio pero de diferentes sesiones puede ser usado.</li>
+						    <li>Se pueden guardar los valores de 1RM indirecto.</li>
+						    <li>Se pueden añadir valores de 1RM manualmente.</li>
+						    <li>Arreglado un desajuste visual en la ventana de 1RM después de borrar un valor.</li>
+					    </ul>
+					    <li>Dos decimales en el feedback de la velocidad.</li>
+					    <li>Al cruzar variables en el análisis, la vertical del gráfico corresponde a la de la curva de ajuste en potencia/carga. Ya no se "pierde" la curva fuera del gráfico.</li>
+					    <li>Ajustados los valores mínimos para "fit" de líneas al comparar la lateralidad.</li>
+					    <li>Se puede seleccionar toda la serie al realizar el análisis de una repetición (instantáneo).</li>
+					    <li>La barra de progreso muestra las repeticiones leídas y suavizadas (asi se aprecia mejor el progreso del análisis).</li>
+					    <li>Mejores suavizados en condiciones de "spar" extremas.</li>
+					    <li>Uso de "momento resistente" al comparar repeticiones con diferentes diámetros o desmultiplicaciones.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bug fa-2x"></i>&nbsp;&nbsp;Errores arreglados</span> 
+				    <ul>
+					    <li>Arreglado problema en la ventana de Chronopic en algunos equipos.</li>
+					    <li>Arreglado crash en las preferencias cuando se usa una base de datos de otro equipo que había detectado más cámaras.</li>
+					    <li>Arreglado crash en los tests limitados por tiempo con más intervalTimes que distancesString.</li>
+					    <li>Treeview de saltos mostraba el peso Kg (sin seguir la preferencia de peso en %). Arreglado.</li>
+					    <li>Arreglado crash al insertar un nuevo tipo de carrera con intérvalo con la distancia en decimal (en idiomas latinos).</li>
+					    <li>Arreglado posible crash al cargar una serie cuando el pixmap aún no se ha definido.</li>
+					    <li>Arreglado problema al guardar 1RM.</li>
+					    <li>Métodos más seguros que solucionan problemas en los cálculos del encoder en situaciones muy poco convencionales.</li>
+					    <li>Arreglado crash al cruzar variables cuando en la lateralidad sólo había un valor distinto de X.</li>
+					    <li>Arreglado crash al recalcular una concéntrico que no podía ser convertido en ecc-con.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Traducciones</span> 
+				    <ul>
+					    <li>Actualizadas las traducciones: alemán (83%), castellano (100%), catalán (100%), checo (97%), griego (96%), húngaro (100%), italiano (97%), portugués de Brasil (98%), serbio (97%).</li>
+					    <li>Gracias especialmente al equipo húngaro, a Lajos Rózsavölgyi y a Márk Rózsavölgyi por el gran trabajo que han realizado en las últimas semanas.</li>
+				    </ul>
+
+			    </div> <!-- 1_6_1 -->
+			    
+			    <div class="separator shadow"></div>
+
 			    <div id="1_6_0">
 				    <h2>Chronojump software: 1.6.0  (10 de marzo, 2016)</h2>
 

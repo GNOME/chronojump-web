@@ -99,13 +99,86 @@
 		  <section id="maincontent" class="twelve columns">
 		    <section class="positionleft seven columns alpha">
 
-			    <!--
 			    Select version:
 			    <ul id="filter" class="controlnav">
+				    <li><a href="#1_6_1" data-value="all">1.6.1</a><br>2016/6/15</li>
 				    <li><a href="#1_6_0" data-value="all">1.6.0</a><br>2016/3/8</li>
 			    </ul>
-			    -->
 			    
+			    <div id="1_6_1">
+				    <h2>Chronojump software: 1.6.1  (2016 June 15)</h2>
+
+				    <span class="highlight2"><i class="fa fa-circle-o fa-2x"></i>&nbsp;&nbsp;Global changes</span>
+				    <ul>
+					    <li>4 main modes with nicer graphs.</li>
+					    <li>Session menu shows different things depending on mode.</li>
+					    <li>Preferences shows only related mode pages.</li>
+					    <li>Automatic names of exported files.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Jumps, Runs, Other tests</span>
+				    <ul>
+					    <li>Greatly improved all graphs of simple tests. With animation bar, value at the middle, easier to understand and allowing to compare with other from same or other persons.</li>
+					    <li>Greatly improved run interval graph. Now distance, time and speed are shown. X is time. 0 speed is shown on beginning if start on the photocell.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bar-chart fa-2x"></i>&nbsp;&nbsp;Encoder</span>
+				    <ul>
+					    <li>Encoder separated in two modes: Gravitational and inertial. This affects to capture, analyze, select encoder, load set, overview of encoder session, 1RM, Neuromuscular profile, ...</li>
+					    <li>Big change on encoder analyze with 4 modes: Current set, Saved repetitions, Intersession, Interperson. Much clear and useful way to manage sets and repetitions. Intersession allows having date on X.</li>
+					    <li>Capture feedback automatic by set done! You can have a realtime feedback on repetitions depending on the max value of the same set. See bells.</li>
+					    <li>Save best repetition on ecc-con uses the average between both. Previously used only concentric phase.</li>
+					    <li>Better GUI for capture: feedback after end of concentric or eccentric. No more wait to the end of two phases.</li>
+					    <li>Better GUI for capture inertial:</li>
+					    <ul>
+						    <li>Shows instructions.</li>
+						    <li>First eccentric phase on gray.</li>
+						    <li>Two lines on realtime graph (body and disc).</li>
+					    </ul>
+					    <li>Encoder capture bars more contrast in eccentric blues, greens and reds.</li>
+					    <li>Inertia moment calculation has a default (and max) time of 120 s.</li>
+					    <li>Cross variables uses mass extra instead of total mass.</li>
+					    <li>Better phase cut on inertial. Cuts by speed like gravitatory encoder.</li>
+					    <li>1RM changes:</li>
+					    <ul>
+						    <li>1RM window is intersession. 1RM from same person, same exercise but different sessions are used.</li>
+						    <li>Indirect 1RM can be saved.</li>
+						    <li>1RM can be added manually.</li>
+						    <li>Fixes glitch on 1RM window when deleting a value.</li>
+					    </ul>
+					    <li>Two decimals on speed feedback.</li>
+					    <li>Analyze Cross variables fits graph vertical size by fitcurve. Fixes displaying curve outside of graph.</li>
+					    <li>Fixed minimum values for fitted lines in laterallity and minimum unique(x) repetitions in fitted lines.</li>
+					    <li>Analyze instant can select all set (not only one repetition).</li>
+					    <li>Analyze pulsebar show progress of readed and smoothed repetitions (easier to see progress).</li>
+					    <li>Better smoothings on extreme "spar" conditions.</li>
+					    <li>Use "ressistant torque" when comparing repetitions with different diameter or gearedDown.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bug fa-2x"></i>&nbsp;&nbsp;Bugs fixed</span> 
+				    <ul>
+					    <li>Fixed Chronopic window that was problematic on some systems.</li>
+					    <li>Fix crash on preferences when using a database on a system with "lower" camera detection.</li>
+					    <li>Fixed crash on tests limited by time with more intervalTimes than distancesString.</li>
+					    <li>Jump treeview displayed weight in Kg (regardless weight % preference). Now is fixed.</li>
+					    <li>Fixed crash on inserting new run intervalType with distance as float (on latin languages).</li>
+					    <li>Fixed possible crash on a null pixmap on loading set.</li>
+					    <li>Fixed problems on save 1RM.</li>
+					    <li>Safer methods fixing bugs on encoder at some rare situations.</li>
+					    <li>Fixed crash on paintCrossVariables laterality with 1 unique x.</li>
+					    <li>Fixed crash on recalculate when 1 concentric cannot be changed to 1 ecc-con.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span> 
+				    <ul>
+					    <li>Updated translations: Brazilian Portuguese (98%), Catalan (100%), Czech (97%), German (83%), Greek (96%), Hungarian (100%), Italian (97%), Serbian (97%), Spanish (100%).</li>
+					    <li>Special thanks to the Hungarian team and Lajos Rózsavölgyi and Márk Rózsavölgyi for the huge work done last weeks.</li>
+				    </ul>
+
+			    </div> <!-- 1_6_1 -->
+			    
+			    <div class="separator shadow"></div>
+
 			    <div id="1_6_0">
 				    <h2>Chronojump software: 1.6.0  (2016 March 10)</h2>
 
