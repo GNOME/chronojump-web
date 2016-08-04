@@ -101,10 +101,75 @@
 
 			    Select version:
 			    <ul id="filter" class="controlnav">
+				    <li><a href="#1_6_2" data-value="all">1.6.2</a><br>2016/8/5</li>
 				    <li><a href="#1_6_1" data-value="all">1.6.1</a><br>2016/6/15</li>
 				    <li><a href="#1_6_0" data-value="all">1.6.0</a><br>2016/3/8</li>
 			    </ul>
 			    
+			    <div id="1_6_2">
+				    <h2>Chronojump software: 1.6.2  (2016 August 5)</h2>
+				    
+				    <span class="highlight2"><i class="fa fa-star-o fa-3x"></i>&nbsp;&nbsp;New features</span>
+				    <ul>
+					    <li>New Chronojump Jumps Profile graph showing five index comparing between jumps. Also added a general recommendations table for improving indexes. <a href="http://pic.twitter.com/nb4RtGCXmM">See this funny video</a>. </li>
+					    <li>Simulated tests can only be done on new "SIMULATED" session. This session cannot be edited or deleted. This helps users to avoid mistakes on capturing fake data when Chronopic is not connected.</li>
+					    <li>Encoder:</li>
+					    <ul>
+						    <li>Encoder continuous mode (at the moment only in gravitatory). Allows to continuously capture without needing to press any button.</li>
+						    <li>An inertial set where string is not fully extended at beginning of capture, is now automatically corrected when capture ends and user is notified.</li>
+						    <li>New encoder automatic save repetitions mode: "from 4th to penultimate" or "4toP". Ideal for saving fast inertial repetitions.</li>
+					    </ul>
+					    <li>Added automatic software-tests that will be run only on developer computers and will help to find and fix software problems much faster.</li>
+				    </ul>
+				    
+				    <span class="highlight2"><i class="fa fa-circle-o fa-2x"></i>&nbsp;&nbsp;Global changes</span> 
+				    <ul>
+					    <li>Updated Chronopic firmware for Windows.</li>
+					    <li>Session load window separates gravitatory/inertial sets/repetitions.</li>
+				    </ul>
+				    
+				    <span class="highlight2"><i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;Jumps, Runs, Other tests</span>
+				    <ul>
+					    <li>Jumps, runs, reactionTimes execute graphs show person best (all sessions), and shows context info (session where best result is achieved).</li>
+					    <li>Jumps, runs, reactionTimes execute graphs get updated on edit, delete on treeviews.</li>
+					    <li>Improvements on updating execute graphs.</li> 
+					    <li>Improvements on reaction time results table.</li>
+					    <li>Changing person or jump type updates jump simple graph (same for runs).</li>
+					    <li>Analyze tab not shown on "other" tests.</li>
+					    <li>Better message on jumps graph if there's no data.</li>
+				    </ul>
+
+				    <span class="highlight2"><i class="fa fa-bar-chart fa-2x"></i>&nbsp;&nbsp;Encoder</span>
+				    <ul>
+					    <li>On eccentric-concentric distance is calculated suming both phases.</li>
+					    <li>Analysis of ecccentric-concentric single curve is much faster now.</li>
+					    <li>Better gui for encoder capture buttons, specially on CustomButtons (tablets).</li>
+					    <li>Change from gravitatory<->inertial cleans interface now.</li>
+					    <li>Better header message on encoder session overview.</li>
+				    </ul> 
+				    
+				    <span class="highlight2"><i class="fa fa-bug fa-2x"></i>&nbsp;&nbsp;Bugs fixed</span> 
+				    <ul>
+					    <li>Fixed crashes on selecting encoder repetitions on analysis tab. Sorry for this problem because affected some users. Thanks users for sending logs.</li>
+					    <li>Fixed a crash on analyze crossVariables with 2 unique X values and trying to plot a curve.</li>
+					    <li>Fixed ocassionally problems on save repetitions on persons with names of non-common codifications.</li>
+					    <li>Fixed crashes on adding jump types, run types, or encoder exercises with this character: "</li>
+					    <li>Fixed Inertia Momentum calculation time-distance since 1.6.1</li>
+					    <li>Fixed glitch on creating a session with an existing name.</li>
+					    <li>Fixed really occasional problem on writing logs by multithreading problems of Console.SetOut</li>
+					    <li>At encoder, fixed some glitches with RepsActive and RepsAll.</li> 
+				    </ul>
+				    
+				    <span class="highlight2"><i class="fa fa-flag-o fa-2x"></i>&nbsp;&nbsp;Translations</span> 
+				    <ul>
+					    <li>Updated translations: Catalan, Hungarian, Spanish.</li>
+				    </ul>
+
+			    </div> <!-- 1_6_2 -->
+			    
+			    <div class="separator shadow"></div>
+
+
 			    <div id="1_6_1">
 				    <h2>Chronojump software: 1.6.1  (2016 June 15)</h2>
 
