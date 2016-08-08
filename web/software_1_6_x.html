@@ -101,13 +101,13 @@
 
 			    Select version:
 			    <ul id="filter" class="controlnav">
-				    <li><a href="#1_6_2" data-value="all">1.6.2</a><br>2016/8/5</li>
+				    <li><a href="#1_6_2" data-value="all">1.6.2</a><br>2016/8/8</li>
 				    <li><a href="#1_6_1" data-value="all">1.6.1</a><br>2016/6/15</li>
 				    <li><a href="#1_6_0" data-value="all">1.6.0</a><br>2016/3/8</li>
 			    </ul>
 			    
 			    <div id="1_6_2">
-				    <h2>Chronojump software: 1.6.2  (2016 August 5)</h2>
+				    <h2>Chronojump software: 1.6.2b  (2016 August 8)</h2>
 				    
 				    <span class="highlight2"><i class="fa fa-star-o fa-3x"></i>&nbsp;&nbsp;New features</span>
 				    <ul>
@@ -116,7 +116,7 @@
 					    <li>Encoder:</li>
 					    <ul>
 						    <li>Encoder continuous mode (at the moment only in gravitatory). Allows to continuously capture without needing to press any button.</li>
-						    <li>An inertial set where string is not fully extended at beginning of capture, is now automatically corrected when capture ends and user is notified.</li>
+						    <li>An inertial set where string is not fully extended at beginning of capture, is now automatically corrected when capture ends and user is notified. This can be adjusted and removed on preferences.</li>
 						    <li>New encoder automatic save repetitions mode: "from 4th to penultimate" or "4toP". Ideal for saving fast inertial repetitions.</li>
 					    </ul>
 					    <li>Added automatic software-tests that will be run only on developer computers and will help to find and fix software problems much faster.</li>
@@ -142,7 +142,7 @@
 				    <span class="highlight2"><i class="fa fa-bar-chart fa-2x"></i>&nbsp;&nbsp;Encoder</span>
 				    <ul>
 					    <li>On eccentric-concentric distance is calculated suming both phases.</li>
-					    <li>Analysis of ecccentric-concentric single curve is much faster now.</li>
+					    <li>Analysis of eccentric-concentric single repetition is much faster now.</li>
 					    <li>Better gui for encoder capture buttons, specially on CustomButtons (tablets).</li>
 					    <li>Change from gravitatory<->inertial cleans interface now.</li>
 					    <li>Better header message on encoder session overview.</li>
@@ -153,6 +153,7 @@
 					    <li>Fixed crashes on selecting encoder repetitions on analysis tab. Sorry for this problem because affected some users. Thanks users for sending logs.</li>
 					    <li>Fixed a crash on analyze crossVariables with 2 unique X values and trying to plot a curve.</li>
 					    <li>Fixed ocassionally problems on save repetitions on persons with names of non-common codifications.</li>
+					    <li>Improvements on encoder capture/analysis processes</li>
 					    <li>Fixed crashes on adding jump types, run types, encoder exercises or session (name, place, comments) with this character: "</li>
 					    <li>Fixed Inertia Momentum calculation time-distance since 1.6.1</li>
 					    <li>Fixed glitch on creating a session with an existing name.</li>
