@@ -136,7 +136,14 @@
 				    <h2>B. Download from GIT</h2>
 				    <ol>
 					    <li>Install git <code>sudo apt-get install git</code></li>
-					    <li>Clone repository <code>git clone git://git.gnome.org/chronojump</code></li>
+					    <li>Clone repository
+						    <code>
+							    #Regular users:
+							    <br>git clone git://git.gnome.org/chronojump
+							    <br>#Developers with GNOME ssh keys:
+							    <br>git clone ssh://USERNAME@git.gnome.org/git/chronojump
+						    </code>
+					    </li>
 					    <li>Change directory <code>cd chronojump</code></li>
 				    </ol>
 			    </div>
@@ -151,6 +158,7 @@
 						    <code>
 							    ./autogen.sh
 							    <br>make
+							    <br>sudo make install
 						    </code>
 					    </li>
 				    </ol>
